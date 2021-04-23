@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Utility class */
@@ -12,8 +13,10 @@
     clear: both;
 }
 
+
 .fl {
-    float: left;
+    float:left;
+    
 }
 
 .fr {
@@ -26,49 +29,111 @@
 }
 
 header {
-    height: 60px;
-    background-color: rgb(207, 48, 173);
+    height: 80px;
     background-image:url(../img/logo.png);
     background-repeat: no-repeat;
     background-size:contain;
 }
 
+nav {
+    margin-top: 20px;
+    padding: 15px 15px 15px 0px;
+    color: rgba(77, 40, 40, 0.5);
+}
 
-.main-immage{
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+
+.main.img{
     height: 400px;
     background-image: url(../img/banner.jpg);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center -120px;
+    background-color: #FEEBE4;
     margin-top: 25px;
     margin-bottom: 25px;
-    border-radius: 10px;;
+    
 }
 
-.container-due{
-    background-color: rgb(57, 106, 180);
+.layover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(77, 40, 40, 0.5);
+  }
+
+  .main.img, .layover{
+    border-radius: 10px;
+  }
+  
+
+.img-text{
+    padding: 200px 350px 100px 70px;
+    color: white;
 }
+
+
 
 .medium-title{
     height: 80px;
-    background-color: rgb(54, 134, 165);
     margin-bottom: 25px;
 }
 
-main, aside, .mid-sidebar, .medium-title {
+.leadership-s{
+    color: rgba(77, 40, 40, 0.5);
+}
+
+main, aside, .mid-sidebar {
     background-color: rgb(27, 201, 231);
 }
 
 main, aside, .mid-sidebar {
     height: 500px;
     margin-bottom: 25px;
+    color: rgba(77, 40, 40, 0.5);
 }
 
+h4{
+    color: black;
+    padding: 5px;
+    padding-left: 0px ;
+}
 
 
 .mid-sidebar {
     width: calc(20% - 25px);
     margin-right: 25px;
+    
+}
+
+/* ridimensiono l'immagine 
+.fl.mid-sidebar img{
+    max-width: 100%;
+} */
+
+
+.small.img{
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+.first.small.img{
+    background-image: url(../img/img-1.jpg);
+    background-size:contain;
     
 }
 
@@ -78,17 +143,27 @@ main {
     margin-right: 25px;
 }
 
+.second.small.img{
+    background-image: url(../img/banner-2.jpg);
+    background-size:contain;
+    
+}
 
 
 aside {
     width: calc(20% - 25px);
 }
 
+.third.small.img{
+    background-image: url(../img/img-3.jpg);
+    background-size:contain;
+    
+}
 
 footer {
-    background-color: rgb(131, 23, 73);
     height: 50px;
     margin-top: 15px;
+    text-align: center;
 }
 
 
